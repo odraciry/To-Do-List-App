@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CadTarefaFragment">
+
+    <TextView
+        style="@style/tv"
+        android:layout_margin="5dp"
+        android:text="Título da tarefa:" />
+
+    <EditText
+        android:id="@+id/titulo"
+        style="@style/et"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:padding="3dp" />
+
+    <TextView
+        style="@style/tv"
+        android:layout_margin="5dp"
+        android:text="Descrição:" />
+
+    <EditText
+        android:id="@+id/descricao"
+        style="@style/et"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="7"
+        android:padding="3dp" />
+
+    <Button
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/data" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Salvar" />
+</LinearLayout>
