@@ -60,4 +60,16 @@ public class Tarefa {
     public void setDataFinalizacao(long dataFinalizacao) {
         this.dataFinalizacao = dataFinalizacao;
     }
+
+    public boolean isConcluida(){
+        return dataFinalizacao != 0;
+    }
+
+    public  boolean isAtrasado(){
+        long time= System.currentTimeMillis();
+        if (dataPrevista < time){
+            return false;
+        }
+        return true;
+    }
 }
